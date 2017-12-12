@@ -1,0 +1,53 @@
+version: '3.1'
+
+services:
+
+  dnsmasq:
+    image: andyshinn/dnsmasq:2.76
+    command: --log-facility=- --server=127.0.0.11 --server=8.8.8.8 --server=172.16.0.72 --server=172.16.0.7 --server=193.10.57.11 --all-servers --neg-ttl=3600 --cache-size=1000 --max-cache-ttl=3600 --min-cache-ttl=3600 
+    cap_add: 
+      - NET_ADMIN 
+    ports:
+      - 172.17.0.1:53:53/tcp
+      - 172.17.0.1:53:53/udp
+    depends_on:
+      - proxy
+    links:
+      - proxy:data.bioatlas.se
+      - proxy:maps.bioatlas.se
+
+  proxy:
+    image: jwilder/nginx-proxy:alpine
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs
+
+  api:
+    image: bioatlas/scibearserver
+    environment:
+      - VIRTUAL_HOST=data.bioatlas.se
+      - VIRTUAL_PORT=8000
+    volumes:
+      - ./sci_bear_data.R:/tmp/sci_bear_data.R
+    command: /tmp/sci_bear_data.R
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+        window: 120s
+
+  map:
+    image: bioatlas/scibearserver
+    environment:
+      - VIRTUAL_HOST=maps.bioatlas.se
+      - VIRTUAL_PORT=8000
+    volumes:
+      - ./sci_bear_map.R:/tmp/sci_bear_map.R
+    command: /tmp/sci_bear_map.R
