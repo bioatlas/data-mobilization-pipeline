@@ -13,7 +13,7 @@ library(jsonlite)
 scibear_map <- function(n = 96, style = "cluster") {
   # retrieve only the coordinates from the data
   coords <- #read_csv("sci_bear_data.csv") %>% # read_excel("sci_bear.xlsx")
-    as_tibble(fromJSON(paste0("https://data.bioatlas.se/scibears?n=", n))) %>%
+    as_tibble(fromJSON(paste0("http://data.bioatlas.se/scibears?n=", n))) %>%
     select(contains("SWEREF99")) %>%
     select(lon = E_SWEREF99, lat = N_SWEREF99)
   
@@ -32,7 +32,7 @@ scibear_map <- function(n = 96, style = "cluster") {
   
   # re-read the initial dataset and add the columns with converted coord data
   df <- #read_csv("sci_bear_data.csv") %>% # read_excel("test.xlsx") %>%
-    as_tibble(fromJSON(paste0("https://data.bioatlas.se/scibears?n=", n))) %>%
+    as_tibble(fromJSON(paste0("http://data.bioatlas.se/scibears?n=", n))) %>%
     mutate(
       lat = p2$lat,
       lon = p2$lon) %>%

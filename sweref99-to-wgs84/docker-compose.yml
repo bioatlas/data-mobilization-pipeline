@@ -23,7 +23,9 @@ services:
       - 443:443
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./certs:/etc/nginx/certs
+#      - ./certs:/etc/nginx/certs
+    depends_on:
+      - api
 
   api:
     image: bioatlas/scibearserver
@@ -51,3 +53,5 @@ services:
     volumes:
       - ./sci_bear_map.R:/tmp/sci_bear_map.R
     command: /tmp/sci_bear_map.R
+    depends_on:
+      - api
