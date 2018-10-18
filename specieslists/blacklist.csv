@@ -1,0 +1,12 @@
+taxonID	taxonRank	kingdom	family	scientificName 	vernacularName	language	countryCode	locationID	occurrenceStatus	establishmentMeans	isInvasive	habitat
+5219858	species	Animalia	Cricetidae	Ondatra zibethicus	Bisam	sv	SE	ISO:SE	present	invasive	1	terrestrial
+2869311	species	Plantae	Araceae	Lysichiton americanus	Gul skunkkalla	sv	SE	ISO:SE	present	invasive	1	terrestrial
+2891770	species	Plantae	Balsaminaceae	Impatiens glandulifera	Jättebalsamin	sv	SE	ISO:SE	present	invasive	1	terrestrial
+3034825	species	Plantae	Apiaceae	Heracleum mantegazzianum	Jätteloka	sv	SE	ISO:SE	present	invasive	1	terrestrial
+2882443	species	Plantae	Cabombaceae	Cabomba caroliniana	Kabomba	sv	SE	ISO:SE	present	invasive	1	freshwater|ponds
+2434552	species	Animalia	Canidae	Nyctereutes procyonoides	Mårdhund	sv	SE	ISO:SE	present	invasive	1	terrestrial
+3170247	species	Plantae	Apocynaceae	Asclepias syriaca	Sidenört	sv	SE	ISO:SE	present	invasive	1	terrestrial
+2226990	species	Animalia	Astacidae	Pacifastacus leniusculus	Signalkräfta	sv	SE	ISO:SE	present	invasive	1	freshwater|ponds
+5329212	species	Plantae	Hydrocharitaceae	Elodea nuttallii	Smal vattenpest	sv	SE	ISO:SE	present	invasive	1	freshwater|ponds
+3628745	species	Plantae	Apiaceae	Heracleum persicum 	Tromsöloka	sv	SE	ISO:SE	present	invasive	1	terrestrial
+2225776	species	Animalia	Varunidae	Eriocheir sinensis	Ullhandkrabba	sv	SE	ISO:SE	present	invasive	1	marine

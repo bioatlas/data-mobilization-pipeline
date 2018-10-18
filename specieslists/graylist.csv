@@ -1,0 +1,10 @@
+taxonID	taxonRank	kingdom	family	scientificName 	vernacularName	language	countryCode	locationID	occurrenceStatus	establishmentMeans
+2964355	species	Plantae	Fabaceae	Lupinus polyphyllus	Blomsterlupin	sv	SE	ISO:SE	present	introduced
+2433652	species	Animalia	Mustelidae	Neovison vison	Mink	sv	SE	ISO:SE	present	introduced
+2889173	species	Plantae	Polygonaceae	Reynoutria japonica	Parkslide	sv	SE	ISO:SE	present	introduced
+2366634	species	Animalia	Cyprinidae	Carassius gibelio	Silverruda	sv	SE	ISO:SE	present	introduced
+8810827	species	Plantae	Menyanthaceae	Nymphoides peltata	Sjögull	sv	SE	ISO:SE	present	introduced
+7540164	species	Animalia	Arionidae	Arion vulgaris	Spansk skogssnigel	sv	SE	ISO:SE	present	introduced
+8035075	species	Plantae	Crassulaceae	Crassula helmsii	Sydfyrling	sv	SE	ISO:SE	present	introduced
+2865448	species	Plantae	Hydrocharitaceae	Elodea canadensis	Vattenpest	sv	SE	ISO:SE	present	introduced
+3003979	species	Plantae	Rosaceae	Rosa rugosa	Vresros	sv	SE	ISO:SE	present	introduced
