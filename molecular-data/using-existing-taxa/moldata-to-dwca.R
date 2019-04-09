@@ -8,17 +8,24 @@ library(readxl)
 library(dplyr)
 
 base <- paste0(
-  "https://github.com/pragermh/data-mobilization-pipeline",
+  "https://github.com/bioatlas/data-mobilization-pipeline",
   "/blob/master/molecular-data/using-existing-taxa/indata/"
 )
+
+# base <- paste0(
+#   "https://github.com/pragermh/data-mobilization-pipeline",
+#   "/blob/master/molecular-data/using-existing-taxa/indata/"
+# )
 
 download.file(
   paste0(base, "occur-ggbn-emof-indata.xlsx?raw=true"), 
   destfile = "/tmp/occur-ggbn-emof-indata.xlsx")
 
 download.file(
-  paste0(base, "meta.xml"), 
+  paste0(base, "meta.xml?raw=true"), 
   destfile = "/tmp/meta.xml")
+
+base
 
 occ <- read_xlsx("/tmp/occur-ggbn-emof-indata.xlsx", sheet = 1)
 ggbn <- read_xlsx("/tmp/occur-ggbn-emof-indata.xlsx", sheet = 2)
