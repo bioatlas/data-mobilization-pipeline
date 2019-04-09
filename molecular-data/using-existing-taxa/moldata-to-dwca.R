@@ -1,8 +1,7 @@
-# Adaptation of dwca_molecular_data_v2.R
-
 # install.packages("readr")
 # install.packages("readxl")
 # install.packages("dplyr")
+
 library(readr)
 library(readxl)
 library(dplyr)
@@ -12,11 +11,6 @@ base <- paste0(
   "/blob/master/molecular-data/using-existing-taxa/indata/"
 )
 
-# base <- paste0(
-#   "https://github.com/pragermh/data-mobilization-pipeline",
-#   "/blob/master/molecular-data/using-existing-taxa/indata/"
-# )
-
 download.file(
   paste0(base, "occur-ggbn-emof-indata.xlsx?raw=true"), 
   destfile = "/tmp/occur-ggbn-emof-indata.xlsx")
@@ -24,8 +18,6 @@ download.file(
 download.file(
   paste0(base, "meta.xml?raw=true"), 
   destfile = "/tmp/meta.xml")
-
-base
 
 occ <- read_xlsx("/tmp/occur-ggbn-emof-indata.xlsx", sheet = 1)
 ggbn <- read_xlsx("/tmp/occur-ggbn-emof-indata.xlsx", sheet = 2)
@@ -53,3 +45,5 @@ zip(
   zipfile = "occur-ggbn-emof.zip", 
   files = c("occurrence.tsv", "ggbn.tsv", "emof.tsv", "meta.xml")
 )
+
+browseURL("https://www.gbif.org/tools/data-validator/1553852821725")
