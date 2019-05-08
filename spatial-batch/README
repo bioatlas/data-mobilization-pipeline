@@ -1,0 +1,25 @@
+quick scripts for batch uploading/editing layers to the spatial portal
+
+= prepare layer files and layers.csv
+
+  environmental layers should be in EHdr format)
+  (gdal_translate -of EHdr in out.bil; zip out.zip out.hdr out.prj out.bil*)
+
+  make sure that all of your layers are described in layers.csv
+
+= grab credentials
+
+  sign in to the portal and add the values of the JSESSIONID and ALA-Auth
+  cookies to config.py
+
+= upload layers
+
+  run upload.py
+  this will run through layers.csv, upload the layers, and output a new csv
+  file called managed.csv which contains each layer's spatial portal id
+
+= add the metadata
+  
+  run manage.py to add the metadata for all "managed" layers and make
+  the layers available for use
+
