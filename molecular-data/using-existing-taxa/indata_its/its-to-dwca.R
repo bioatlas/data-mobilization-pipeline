@@ -23,16 +23,16 @@ its <- read_csv(file_url("unique_ITS2-ASVs_subset.csv"))
 # function to generate "meta.xml" needed for the dwca file
 # assumes a single occurrence core
 
-write_meta <- function(occurrence_df, filepath) {
-  
+write_meta <- function(df, filepath) {
+
   template <- 
     read_lines(file_url("meta-template.xml"))
   
-  zerobased <- 1:length(names(its)) - 1
+  zerobased <- 1:length(names(df)) - 1
   
   fields_xml <- paste(collapse = "\n", c(
-    sprintf("<id index='%s' />", which(names(its) == "occurrenceID")) - 1,
-    sprintf("<field index='%s' term='http://rs.tdwg.org/dwc/terms/%s'/>", zerobased, names(its))
+    sprintf("<id index='%s' />", which(names(df) == "occurrenceID") - 1),
+    sprintf("<field index='%s' term='http://rs.tdwg.org/dwc/terms/%s'/>", zerobased, names(df))
     ))
   
   meta <- 
@@ -51,14 +51,19 @@ setwd("/tmp")
 write_tsv(its, "occurrence.tsv", quote_escape = "none")
 write_meta(its, "meta.xml")
 
+# TODO: later add EML generation perhaps from template
+# for now just use an existing valid static eml.xml file
+# download.file(file_url("eml.xml"), "/tmp/eml.xml")
+
 zip(
   flags = "--junk-paths",
   zipfile = "occur-its.zip", 
-  files = c("occurrence.tsv", "meta.xml")
+  files = c("occurrence.tsv", "meta.xml", "eml.xml")
 )
 
 setwd(pwd)
 
+#file.copy("/tmp/occur-its.zip", "occur-its.zip", overwrite = TRUE)
 #library(finch)
 #dwca_validate(file_url("occur-its.zip"), browse = TRUE)
 

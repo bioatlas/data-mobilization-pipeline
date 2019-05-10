@@ -1,0 +1,193 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="84d26682-f762-11e1-a439-00145eb45e9a/v9.3" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <title xml:lang="eng">Diversity of Pico- to Mesoplankton along the 2000 km Salinity Gradient of the Baltic Sea</title>
+
+  <creator>
+  <individualName>
+      <givenName>Maria</givenName>
+    <surName>Prager</surName>
+  </individualName>
+  <organizationName>Scilifelab, DEEP, Stockholm University</organizationName>
+  <positionName>Research Engineer</positionName>
+  <address>
+      <deliveryPoint></deliveryPoint>
+      <city>Stockholm</city>
+      <country>SE</country>
+  </address>
+  <electronicMailAddress>maria.prager@scilifelab.se</electronicMailAddress>
+  </creator>
+ 
+      <metadataProvider>
+  <individualName>
+      <givenName>Anders</givenName>
+    <surName>Andersson</surName>
+  </individualName>
+  <organizationName>Scilifelab, Royal Institute of Technology</organizationName>
+  <positionName>Associate Professor</positionName>
+  <address>
+      <deliveryPoint></deliveryPoint>
+      <city>Stockholm</city>
+      <country>SE</country>
+  </address>
+  <electronicMailAddress>anders.andersson@scilifelab.se</electronicMailAddress>
+    <role>principalInvestigator</role>
+      
+
+      </metadataProvider>
+
+      
+  <pubDate>
+	  2019-05-03
+     
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+  
+          <para>Microbial plankton form the productive base of both marine and freshwater ecosystems and are key drivers of global biogeochemical cycles of carbon and nutrients. Plankton diversity is immense with representations from all major phyla within the three domains of life. So far, plankton monitoring has mainly been based on microscopic identification, which has limited sensitivity and reproducibility, not least because of the numerical majority of plankton being unidentifiable under the light microscope. High-throughput sequencing of taxonomic marker genes offers a means to identify taxa inaccessible by traditional methods; thus, recent studies have unveiled an extensive previously unknown diversity of plankton. Here, we conducted ultra-deep Illumina sequencing (average 105 sequences/sample) of rRNA gene amplicons of surface water eukaryotic and bacterial plankton communities sampled in summer along a 2000 km transect following the salinity gradient of the Baltic Sea. Community composition was strongly correlated with salinity for both bacterial and eukaryotic plankton assemblages, highlighting the importance of salinity for structuring the biodiversity within this ecosystem. In contrast, no clear trends in alpha-diversity for bacterial or eukaryotic communities could be detected along the transect. The distribution of major planktonic taxa followed expected patterns as observed in monitoring programs, but groups novel to the Baltic Sea were also identified, such as relatives to the coccolithophore Emiliana huxleyi detected in the northern Baltic Sea. This study provides the first ultra-deep sequencing-based survey on eukaryotic and bacterial plankton biogeography in the Baltic Sea.</para>
+<para>
+Biogeography of Baltic Sea Plankton.
+</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Baltic Sea</keyword>
+            <keyword>bacterioplankton</keyword>
+            <keyword>brackish</keyword>
+            <keyword>metabarcoding</keyword>
+            <keyword>marine microbiology</keyword>
+            <keyword>microbial</keyword>
+        <keywordThesaurus>N/A</keywordThesaurus>
+      </keywordSet>
+    
+  <intellectualRights>
+    <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://www.scilifelab.se/</url>
+	  
+    </online>
+  </distribution>
+  
+  
+  
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>EURO DK</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>11.1</westBoundingCoordinate>
+          <eastBoundingCoordinate>11.1</eastBoundingCoordinate>
+          <northBoundingCoordinate>58.3</northBoundingCoordinate>
+          <southBoundingCoordinate>58.3</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <temporalCoverage>
+              <rangeOfDates>
+                  <beginDate>
+                    <calendarDate>2017-03-08</calendarDate>
+                  </beginDate>
+                <endDate>
+                  <calendarDate>2017-03-08</calendarDate>
+                </endDate>
+              </rangeOfDates>
+          </temporalCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>Bacteria</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>kingdom</taxonRankName>
+                <taxonRankValue>Bacteria</taxonRankValue>
+              </taxonomicClassification>
+              
+          </taxonomicCoverage>
+  </coverage>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>unknown</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Maria</givenName>
+      <surName>Prager</surName>
+    </individualName>
+    <organizationName>Scilifelab, DEEP, Stockholm University</organizationName>
+    <positionName>Research Engineer</positionName>
+    <address>
+        <deliveryPoint>
+</deliveryPoint>
+        <city>Stockholm</city>
+        <postalCode></postalCode>
+        <country>SE</country>
+    </address>
+        <electronicMailAddress>maria.prager@scilifelab.se</electronicMailAddress>
+
+   
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para>xxx</para>
+          </description>
+        </methodStep>
+       
+      <sampling>
+        <studyExtent>
+          <description>
+            <para>Sweden</para>
+          </description>
+        </studyExtent>
+        <samplingDescription>
+          <para>
+          xxx
+          </para>
+        </samplingDescription>
+      </sampling>
+      
+  </methods>
+  <project >
+    <title>Diversity of Pico- to Mesoplankton along the 2000 km Salinity Gradient of the Baltic Sea</title>
+
+    <personnel>
+      <individualName>
+          <givenName>Anders</givenName>
+        <surName>Andersson</surName>
+      </individualName>
+      <role>principalInvestigator</role>
+    </personnel>
+   
+      <funding>
+        <para>This work was supported by BONUS BLUEPRINT project,
+supported by BONUS (Art 185), funded jointly by the EU and
+the Swedish Research Council FORMAS. It is also funded by
+the Swedish Research Council VR (grant 2011-5689) through
+a grant to AA. The work was in part supported by the
+JERICO project from the European Union Seventh Framework
+Programme (FP7/2007–2013) under grant agreement no. 262584,
+and through the Swedish Research Council VR through the
+Swedish Lifewatch project. YH was supported by a scholarship
+from the China Scholarship Council (CSC#201206950024).</para>
+      </funding>
+  </project>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+    <gbif>
+              <bibliography>
+              
+              Hu, Yue O.O., Bengt Karlson, Sophie Charvet, and Anders F. Andersson. 2016. “Diversity of Pico- to Mesoplankton along the 2000 Km Salinity Gradient of the Baltic Sea.” Frontiers in Microbiology 7 (MAY): 1–17. https://doi.org/10.3389/fmicb.2016.00679.
+                
+                <citation identifier="DOI:10.3389/fmicb.2016.00679">Hu, Yue O.O., Bengt Karlson, Sophie Charvet, and Anders F. Andersson. 2016. “Diversity of Pico- to Mesoplankton along the 2000 Km Salinity Gradient of the Baltic Sea.” Frontiers in Microbiology 7 (MAY): 1–17. </citation>
+
+          </bibliography>
+    </gbif>
+   
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
