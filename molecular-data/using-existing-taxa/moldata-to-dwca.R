@@ -35,7 +35,7 @@ occ_ext_emof <-
   select(-eventID)
 
 # generate dynamic properties with all columns from the 
-# extended measurements or facts extension in JSON
+# GGBN extension serialized using JSON
 
 library(jsonlite)
 library(purrr)
