@@ -1,0 +1,8 @@
+<archive xmlns="http://rs.tdwg.org/dwc/text/">
+	<core encoding="UTF-8" linesTerminatedBy="\n" fieldsTerminatedBy="\t" fieldsEnclosedBy="&quot;" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
+	<files>
+			<location>occurrence.tsv</location>
+		</files>
+		<!-- SEARCH_AND_REPLACE_ME -->
+	</core>
+</archive>
