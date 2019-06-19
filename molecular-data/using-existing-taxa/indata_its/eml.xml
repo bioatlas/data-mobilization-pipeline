@@ -6,105 +6,103 @@
          xml:lang="eng">
 
 <dataset>
-  <title xml:lang="eng">Diversity of Pico- to Mesoplankton along the 2000 km Salinity Gradient of the Baltic Sea</title>
-
+  <title xml:lang="eng">Environmental long read amplicons of soil fungi across Podzol soil profile</title>
+  <type>samplingEvent</type>
   <creator>
-  <individualName>
-      <givenName>Maria</givenName>
-    <surName>Prager</surName>
-  </individualName>
-  <organizationName>Scilifelab, DEEP, Stockholm University</organizationName>
-  <positionName>Research Engineer</positionName>
-  <address>
+    <individualName>
+      <givenName>Jeanette</givenName>
+      <surName>Tångrot</surName>
+    </individualName>
+    <organizationName></organizationName>
+    <positionName></positionName>
+    <address>
       <deliveryPoint></deliveryPoint>
-      <city>Stockholm</city>
+      <city></city>
       <country>SE</country>
-  </address>
-  <electronicMailAddress>maria.prager@scilifelab.se</electronicMailAddress>
+    </address>
+    <electronicMailAddress>jeanette.tangrot@nbis.se</electronicMailAddress>
   </creator>
  
-      <metadataProvider>
-  <individualName>
-      <givenName>Anders</givenName>
-    <surName>Andersson</surName>
-  </individualName>
-  <organizationName>Scilifelab, Royal Institute of Technology</organizationName>
-  <positionName>Associate Professor</positionName>
-  <address>
+  <metadataProvider>
+    <individualName>
+      <givenName>Anna</givenName>
+      <surName>Rosling</surName>
+    </individualName>
+    <organizationName>Evolutionsbiologiskt Centrum, Uppsala University</organizationName>
+    <positionName>Senior Lecturer</positionName>
+    <address>
       <deliveryPoint></deliveryPoint>
-      <city>Stockholm</city>
+      <city>Uppsala</city>
       <country>SE</country>
-  </address>
-  <electronicMailAddress>anders.andersson@scilifelab.se</electronicMailAddress>
+    </address>
+    <electronicMailAddress>anna.rosling@ebc.uu.se</electronicMailAddress>
     <role>principalInvestigator</role>
-      
+  </metadataProvider>
 
-      </metadataProvider>
-
-      
-  <pubDate>
-	  2019-05-03
+  <contact>
+    <individualName>
+      <givenName>Anna</givenName>
+      <surName>Rosling</surName>
+    </individualName>
+    <organizationName>Evolutionsbiologiskt Centrum, Uppsala University</organizationName>
+    <positionName>Senior Lecturer</positionName>
+    <address>
+      <deliveryPoint></deliveryPoint>
+      <city>Uppsala</city>
+      <country>SE</country>
+    </address>
+    <electronicMailAddress>anna.rosling@ebc.uu.se</electronicMailAddress>
+  </contact>
      
-  </pubDate>
+  <pubDate>2019-08-13</pubDate>
   <language>eng</language>
   <abstract>
-  
-          <para>Microbial plankton form the productive base of both marine and freshwater ecosystems and are key drivers of global biogeochemical cycles of carbon and nutrients. Plankton diversity is immense with representations from all major phyla within the three domains of life. So far, plankton monitoring has mainly been based on microscopic identification, which has limited sensitivity and reproducibility, not least because of the numerical majority of plankton being unidentifiable under the light microscope. High-throughput sequencing of taxonomic marker genes offers a means to identify taxa inaccessible by traditional methods; thus, recent studies have unveiled an extensive previously unknown diversity of plankton. Here, we conducted ultra-deep Illumina sequencing (average 105 sequences/sample) of rRNA gene amplicons of surface water eukaryotic and bacterial plankton communities sampled in summer along a 2000 km transect following the salinity gradient of the Baltic Sea. Community composition was strongly correlated with salinity for both bacterial and eukaryotic plankton assemblages, highlighting the importance of salinity for structuring the biodiversity within this ecosystem. In contrast, no clear trends in alpha-diversity for bacterial or eukaryotic communities could be detected along the transect. The distribution of major planktonic taxa followed expected patterns as observed in monitoring programs, but groups novel to the Baltic Sea were also identified, such as relatives to the coccolithophore Emiliana huxleyi detected in the northern Baltic Sea. This study provides the first ultra-deep sequencing-based survey on eukaryotic and bacterial plankton biogeography in the Baltic Sea.</para>
-<para>
-Biogeography of Baltic Sea Plankton.
-</para>
+    <para>Soil samples were collected in mid-October 2013 from Ivantjärnsheden field station in Jädraås (60°49‘N, 16°30’E, altitude 185 m), a well-documented field site in central Sweden (Persson, 1980) with Pinus sylvestris L. overstory and an understory of ericaceous dwarf shrubs (Calluna vulgaris (L.) Hull and Vaccinium vitis-ideae L.) and mosses (Dicranum majus Turner and Pleurozium schreberi (Bridel) Mitten). To account for small-scale variability in soil fungal communities we collected 5 soil cores (5 cm diameter and 15 cm deep) in each of 12 plots in the since terminated experiment IhII (9802) (Axelsson & Bråkenhielm, 1980). After visually dividing the plot into four quadrats one cores were taken from the middle of each quadrat and from the middle of the plot after peeling back the top shrub and moss layer (incl. most of the litter layer). Soil cores were separated into visually distinct podzol soil layers: organic soil (O), mineral elluvial soil (E) and mineral illuvial soil (B) before pooling the layers for each plot. From each composite soil sample two sub-samples of approximately 0.5 g wet weight were collected for DNA extraction. Approximately 1500 bp of the rDNA from all soil DNA extracts was amplified using the primer set ITS1F (Gardes & Bruns, 1993) and LR5 (Hopple Jr & Vilgalys, 1994). A total of 5, 8 and 3 samples successfully amplified for O, E and B horizons, respectively (Table S1). PCR products from the separate soil horizons were pooled to generate three amplicon libraries (SwO, SwE and SwB) for sequencing at SciLifeLab/NGI (Uppsala, Sweden) on a PacBio RS II system (Pacific Biosciences, Menlo Park, CA, USA).</para>
+    <para></para>
   </abstract>
-      <keywordSet>
-            <keyword>Baltic Sea</keyword>
-            <keyword>bacterioplankton</keyword>
-            <keyword>brackish</keyword>
-            <keyword>metabarcoding</keyword>
-            <keyword>marine microbiology</keyword>
-            <keyword>microbial</keyword>
-        <keywordThesaurus>N/A</keywordThesaurus>
-      </keywordSet>
+  
+  <keywordSet>
+     <keyword>Podzol</keyword>
+     <keyword>fungi</keyword>
+     <keyword>ITS</keyword>
+     <keyword>metabarcoding</keyword>
+     <keyword>microbial</keyword>
+   <keywordThesaurus>N/A</keywordThesaurus>
+  </keywordSet>
     
   <intellectualRights>
     <para>This work is licensed under a <ulink url="http://creativecommons.org/licenses/by-nc/4.0/legalcode"><citetitle>Creative Commons Attribution Non Commercial (CC-BY-NC) 4.0 License</citetitle></ulink>.</para>
   </intellectualRights>
-  <distribution scope="document">
-    <online>
-      <url function="information">http://www.scilifelab.se/</url>
-	  
-    </online>
-  </distribution>
-  
-  
   
   <coverage>
-      <geographicCoverage>
-          <geographicDescription>EURO DK</geographicDescription>
-        <boundingCoordinates>
-          <westBoundingCoordinate>11.1</westBoundingCoordinate>
-          <eastBoundingCoordinate>11.1</eastBoundingCoordinate>
-          <northBoundingCoordinate>58.3</northBoundingCoordinate>
-          <southBoundingCoordinate>58.3</southBoundingCoordinate>
-        </boundingCoordinates>
-      </geographicCoverage>
-          <temporalCoverage>
-              <rangeOfDates>
-                  <beginDate>
-                    <calendarDate>2017-03-08</calendarDate>
-                  </beginDate>
-                <endDate>
-                  <calendarDate>2017-03-08</calendarDate>
-                </endDate>
-              </rangeOfDates>
-          </temporalCoverage>
-          <taxonomicCoverage>
-              <generalTaxonomicCoverage>Bacteria</generalTaxonomicCoverage>
-              <taxonomicClassification>
-                  <taxonRankName>kingdom</taxonRankName>
-                <taxonRankValue>Bacteria</taxonRankValue>
-              </taxonomicClassification>
-              
-          </taxonomicCoverage>
+    <geographicCoverage>
+      <geographicDescription>Ivantjärnsheden field station in Jädraås, Sweden</geographicDescription>
+      <boundingCoordinates>
+        <westBoundingCoordinate>16.5</westBoundingCoordinate>
+        <eastBoundingCoordinate>16.5</eastBoundingCoordinate>
+        <northBoundingCoordinate>60.82</northBoundingCoordinate>
+        <southBoundingCoordinate>60.82</southBoundingCoordinate>
+      </boundingCoordinates>
+    </geographicCoverage>
+    <temporalCoverage>
+      <rangeOfDates>
+        <beginDate>
+           <calendarDate>2013-10-01</calendarDate>
+        </beginDate>
+        <endDate>
+           <calendarDate>2013-10-31</calendarDate>
+        </endDate>
+       </rangeOfDates>
+    </temporalCoverage>
+    <taxonomicCoverage>
+      <generalTaxonomicCoverage>Fungi</generalTaxonomicCoverage>
+      <taxonomicClassification>
+        <taxonRankName>kingdom</taxonRankName>
+        <taxonRankValue>Fungi</taxonRankValue>
+      </taxonomicClassification>
+    </taxonomicCoverage>
   </coverage>
+  
   <maintenance>
     <description>
       <para></para>
@@ -112,82 +110,53 @@ Biogeography of Baltic Sea Plankton.
     <maintenanceUpdateFrequency>unknown</maintenanceUpdateFrequency>
   </maintenance>
 
-      <contact>
-    <individualName>
-        <givenName>Maria</givenName>
-      <surName>Prager</surName>
-    </individualName>
-    <organizationName>Scilifelab, DEEP, Stockholm University</organizationName>
-    <positionName>Research Engineer</positionName>
-    <address>
-        <deliveryPoint>
-</deliveryPoint>
-        <city>Stockholm</city>
-        <postalCode></postalCode>
-        <country>SE</country>
-    </address>
-        <electronicMailAddress>maria.prager@scilifelab.se</electronicMailAddress>
-
-   
-      </contact>
   <methods>
-        <methodStep>
-          <description>
-            <para>xxx</para>
-          </description>
-        </methodStep>
-       
-      <sampling>
-        <studyExtent>
-          <description>
-            <para>Sweden</para>
-          </description>
-        </studyExtent>
-        <samplingDescription>
-          <para>
-          xxx
-          </para>
-        </samplingDescription>
-      </sampling>
-      
+    <methodStep>
+      <description>
+        <para>Amplicon libraries from podzol soil. Approximately 1500bp of the rRNA was amplified using primers ITS1F and LR5, and sequenced on a PacBio RS II system. ASVs were determined using the DADA2 package [REF]...</para>
+      </description>
+    </methodStep>
+    <sampling>
+      <studyExtent>
+        <description>
+          <para>Sweden</para>
+        </description>
+      </studyExtent>
+      <samplingDescription>
+        <para>
+        xxx
+        </para>
+      </samplingDescription>
+    </sampling>
   </methods>
+  
   <project >
-    <title>Diversity of Pico- to Mesoplankton along the 2000 km Salinity Gradient of the Baltic Sea</title>
-
+    <title>Environmental fungal phylogenies</title>
     <personnel>
       <individualName>
-          <givenName>Anders</givenName>
-        <surName>Andersson</surName>
+        <givenName>Anna</givenName>
+        <surName>Rosling</surName>
       </individualName>
       <role>principalInvestigator</role>
     </personnel>
    
-      <funding>
-        <para>This work was supported by BONUS BLUEPRINT project,
-supported by BONUS (Art 185), funded jointly by the EU and
-the Swedish Research Council FORMAS. It is also funded by
-the Swedish Research Council VR (grant 2011-5689) through
-a grant to AA. The work was in part supported by the
-JERICO project from the European Union Seventh Framework
-Programme (FP7/2007–2013) under grant agreement no. 262584,
-and through the Swedish Research Council VR through the
-Swedish Lifewatch project. YH was supported by a scholarship
-from the China Scholarship Council (CSC#201206950024).</para>
+    <funding>
+      <para>This work was funded by grants from VR (2012-03950), Carl Trygger foundation and Lars Hiertas Memorial Foundation.</para>
       </funding>
   </project>
-</dataset>
-  <additionalMetadata>
-    <metadata>
-    <gbif>
-              <bibliography>
-              
-              Hu, Yue O.O., Bengt Karlson, Sophie Charvet, and Anders F. Andersson. 2016. “Diversity of Pico- to Mesoplankton along the 2000 Km Salinity Gradient of the Baltic Sea.” Frontiers in Microbiology 7 (MAY): 1–17. https://doi.org/10.3389/fmicb.2016.00679.
-                
-                <citation identifier="DOI:10.3389/fmicb.2016.00679">Hu, Yue O.O., Bengt Karlson, Sophie Charvet, and Anders F. Andersson. 2016. “Diversity of Pico- to Mesoplankton along the 2000 Km Salinity Gradient of the Baltic Sea.” Frontiers in Microbiology 7 (MAY): 1–17. </citation>
 
-          </bibliography>
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+      <bibliography>
+        xxx                
+        <citation identifier="">XXX</citation>
+      </bibliography>
     </gbif>
    
-    </metadata>
-  </additionalMetadata>
+  </metadata>
+</additionalMetadata>
+
 </eml:eml>
