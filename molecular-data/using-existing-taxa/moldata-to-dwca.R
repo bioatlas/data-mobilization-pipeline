@@ -34,11 +34,38 @@ occ_ext_emof <-
   left_join(emof) %>%
   select(-eventID)
 
+# generate dynamic properties with all columns from the 
+# GGBN extension serialized using JSON
+
+library(jsonlite)
+library(purrr)
+
+# the unboxing encodes vectors of length 1 as 
+# scalars, not arrays in the JSON
+toJSON2 <- function(...) toJSON(auto_unbox = TRUE, ...)
+
+# show how to add a column to a tibble then pull it out into a vector
+# the parallell map creates a list with named entries for each of the columns across a row
+# the regular map then converts these key-value pairs to a (n unboxed) JSON string
+dynamicProperties <- 
+  ggbn %>% 
+  select(-occurrenceID) %>%
+  mutate(dynamicProperties = as.character(map(pmap(., list), toJSON2))) %>%
+  pull(dynamicProperties)
+
+# add the dynamic properties from the emof ext 
+# as a dynamicProperties field in the occurrence core
+occ <- 
+  occ %>%
+  mutate(dynamicProperties = dynamicProperties)
+
+pwd <- getwd()
+
 setwd("/tmp")
 
-write_tsv(occ, "occurrence.tsv")
-write_tsv(ggbn, "ggbn.tsv")
-write_tsv(occ_ext_emof, "emof.tsv")
+write_tsv(occ, "occurrence.tsv", quote_escape = "none")
+write_tsv(ggbn, "ggbn.tsv", quote_escape = "none")
+write_tsv(occ_ext_emof, "emof.tsv", quote_escape = "none")
 
 zip(
   flags = "--junk-paths",
@@ -46,4 +73,9 @@ zip(
   files = c("occurrence.tsv", "ggbn.tsv", "emof.tsv", "meta.xml")
 )
 
-browseURL("https://www.gbif.org/tools/data-validator/1553852821725")
+
+setwd(pwd)
+
+#browseURL("https://www.gbif.org/tools/data-validator/1553852821725")
+
+
