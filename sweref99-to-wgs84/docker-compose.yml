@@ -1,10 +1,10 @@
-version: '3.1'
+version: '3.6'
 
 services:
 
   dnsmasq:
     image: andyshinn/dnsmasq:2.76
-    command: --log-facility=- --server=127.0.0.11 --server=8.8.8.8 --server=172.16.0.72 --server=172.16.0.7 --server=193.10.57.11 --all-servers --neg-ttl=3600 --cache-size=1000 --max-cache-ttl=3600 --min-cache-ttl=3600 
+    command: --log-facility=- --server=127.0.1.1 --server=8.8.8.8 --server=172.16.0.72 --server=172.16.0.7 --server=193.10.57.11 --all-servers --neg-ttl=3600 --cache-size=1000 --max-cache-ttl=3600 --min-cache-ttl=3600 
     cap_add: 
       - NET_ADMIN 
     ports:
@@ -34,7 +34,7 @@ services:
       - VIRTUAL_PORT=8000
     volumes:
       - ./sci_bear_data.R:/tmp/sci_bear_data.R
-    command: /tmp/sci_bear_data.R
+    command: "/tmp/sci_bear_data.R"
     deploy:
       replicas: 3
       update_config:
@@ -52,6 +52,6 @@ services:
       - VIRTUAL_PORT=8000
     volumes:
       - ./sci_bear_map.R:/tmp/sci_bear_map.R
-    command: /tmp/sci_bear_map.R
+    command: "/tmp/sci_bear_map.R"
     depends_on:
       - api
