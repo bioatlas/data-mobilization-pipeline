@@ -14,7 +14,7 @@ with open("managed.csv", "w") as managed:
         writer.writeheader()
         for row in reader:
             if row.get("filename") and not row.get("manage"):
-                files = { "file": open(row["filename"]) }
+                files = { "file": open("src/" + row["filename"]) }
                 try:
                     r = requests.post(config.URL + "upload", files=files, cookies=config.COOKIES)
                     row["manage"] = r.url
