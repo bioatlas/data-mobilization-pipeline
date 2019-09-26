@@ -22,6 +22,7 @@ with open("managed.csv") as f:
                 'domain': row.get("domain"),
                 'source': row.get("source"),
                 'environmentalvalueunits': row.get("valueUnits"),
+				'metadatapath': '',
                 'classification1': row.get("classification1"),
                 'classification2': row.get("classification2"),
                 'license_notes': row.get("licenseNotes"),
